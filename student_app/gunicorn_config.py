@@ -1,6 +1,4 @@
-import os
-bind = f"0.0.0.0:{os.getenv('PORT', '5000')}"
-
+bind = "0.0.0.0:$PORT"
 workers = 4
 worker_class = "sync"
 worker_connections = 1000
